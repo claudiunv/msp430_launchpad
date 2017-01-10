@@ -36,6 +36,15 @@ Prerequisites:
  * TI / Redhat MSP430-GCC toolchain
  * make
 
+---
+or
+ * TI MSP430-GCC  4_02_00_00 (latest stable) binaries
+ * make
+
+Modify makefile to have CC variable path set for msp430-elf-gcc.
+
+---
+
 If the toolchain is not installed under /opt/msp430-toolchain, set the environment
 variable TOOLCHAIN_ROOT to point to the toolchain root directory.
 

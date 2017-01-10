@@ -38,8 +38,8 @@
 #define TIMER_RESOLUTION_MS    100
 
 #define SR_ALLOC() uint16_t __sr
-#define ENTER_CRITICAL() __sr = _get_interrupt_state(); __disable_interrupt()
-#define EXIT_CRITICAL() __set_interrupt_state(__sr)
+#define ENTER_CRITICAL() __sr = _get_interrupt_state(); __disable_interrupt(); __no_operation()
+#define EXIT_CRITICAL() __set_interrupt_state(__sr); __no_operation()
 
 struct timer
 {

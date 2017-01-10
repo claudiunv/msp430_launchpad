@@ -4,6 +4,11 @@
 TOOLCHAIN_ROOT?=/opt/msp430-toolchain
 
 # Toolchain variables
+# Set this variable to use the TI's builded toolchain
+# CC:=$(TOOLCHAIN_ROOT)/bin/msp430-elf-gcc
+#
+# Set this variable to use the toolchain compiled on how is described on
+# tutorial
 CC:=$(TOOLCHAIN_ROOT)/bin/msp430-gcc
 
 # Directories

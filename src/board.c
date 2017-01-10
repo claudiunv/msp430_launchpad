@@ -94,6 +94,7 @@ int board_init(void)
     P1SEL2 |= 0x6;
 
     /* Global interrupt enable */
+    __no_operation();
     __enable_interrupt();
  
     watchdog_enable();
